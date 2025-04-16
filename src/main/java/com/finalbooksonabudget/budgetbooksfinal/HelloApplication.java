@@ -14,15 +14,15 @@ import java.io.IOException;
 
 public class HelloApplication extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("home.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 395);
-        stage.setTitle("Books on a Budget");
-        stage.setScene(scene);
-        stage.getIcons().add(new Image("C:\\Users\\dbhol\\Downloads\\FinalProjectBooksOnaBudget\\src\\main\\resources\\com\\finalbooksonabudget\\budgetbooksfinal\\BooksOnABudget_Logo.png"));
+    public void start(Stage stage) throws IOException { //start method prepares all the launch elements
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("home.fxml")); //establishes a home screen
+        Scene scene = new Scene(fxmlLoader.load(), 600, 395); //sets the windows initial dimensions
+        stage.setTitle("Books on a Budget"); //name of the frame
+        stage.setScene(scene); //sets the scene for the stage
+        stage.getIcons().add(new Image("C:\\Users\\dbhol\\Downloads\\FinalProjectBooksOnaBudget\\src\\main\\resources\\com\\finalbooksonabudget\\budgetbooksfinal\\BooksOnABudget_Logo.png")); //changes the icon to the books on a budget logo
 
-        stage.setResizable(false);
-        stage.show();
+        stage.setResizable(false); //locks the window size
+        stage.show(); //makes the stage visible
 
 
     }
@@ -31,8 +31,8 @@ public class HelloApplication extends Application {
 
 
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException { //main method to run other methods
 
-        launch();
+        launch(); //Launches the Application
     }
 }

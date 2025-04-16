@@ -12,10 +12,12 @@ import java.util.List;
 import java.util.Scanner;
 import java.io.*;
 
+
+//This class is a testing page for methods that were to be used in the controller class.
 public class filter {
 
     public static void main (String [] args) throws IOException {
-        changetoArrayEbaytitles();
+        changetoArrayEbaytitles();  //the following lines of code call the methods that put information from the txt files into an Array
         changeToArrayEbayPrices();
         changetoArrayThriftTitles();
         changeToArrayThriftPrices();
@@ -24,16 +26,16 @@ public class filter {
     }
 
     public static void changeToArrayEbayPrices() throws FileNotFoundException {
-        List<Double> listOfPricesEbay = new ArrayList<Double>();
+        List<Double> listOfPricesEbay = new ArrayList<Double>(); //This puts the Ebay prices from the txt file into a Double array
         Scanner scnr = new Scanner(new FileReader("C:\\Users\\dbhol\\Downloads\\FinalProjectBooksOnaBudget\\src\\main\\resources\\com\\finalbooksonabudget\\budgetbooksfinal\\ebaylistt.txt"));
         double catalogContent;
 
         int i = 0;
-        String[] placeholder = {"a", "b", "c", "d"};
+
         while (scnr.hasNextLine()) {
             if (scnr.nextLine().contains("a") || scnr.nextLine().contains("i") || scnr.nextLine().contains("o") || scnr.nextLine().contains("u") || scnr.nextLine().contains("e")) {
-                catalogContent = Double.parseDouble(scnr.nextLine());
-                listOfPricesEbay.add(catalogContent);
+                catalogContent = Double.parseDouble(scnr.nextLine()); //Parsing the nexLine() method with the parse double method turns the scanned string from the next line into a double. this allows me to create a seprate double array from the string array.
+                listOfPricesEbay.add(catalogContent); //this adds the parsed input into the list of prices double arrayList
                 System.out.println(listOfPricesEbay.get(i));
                 i++;
             } else {
