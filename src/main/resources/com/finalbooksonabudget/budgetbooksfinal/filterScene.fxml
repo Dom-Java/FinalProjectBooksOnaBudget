@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.finalbooksonabudget.budgetbooksfinal.projectController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="610.0" layoutX="-3.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@bookshelf.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="610.0" layoutX="-2.0" layoutY="360.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="360.0">
+         <image>
+            <Image url="@wooden_board.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="600.0" AnchorPane.bottomAnchor="336.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@wooden_board.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="417.0" fitWidth="610.0" layoutX="-3.0" AnchorPane.bottomAnchor="-17.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@curtain.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="52.0" layoutX="277.0" layoutY="364.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="271.0" AnchorPane.topAnchor="364.0">
+         <image>
+            <Image url="@BooksOnABudget_Logo.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#680606" height="424.0" layoutX="-3.0" layoutY="-9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="79.0" AnchorPane.bottomAnchor="-15.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="524.0" AnchorPane.topAnchor="-9.0" />
+      <Button fx:id="belowFive" layoutX="5.0" layoutY="52.0" mnemonicParsing="false" onAction="#detectFive" prefHeight="36.0" prefWidth="58.0" text="below $5" AnchorPane.bottomAnchor="312.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="537.0" AnchorPane.topAnchor="52.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button fx:id="belowTen" layoutX="5.0" layoutY="104.0" mnemonicParsing="false" onAction="#detectTen" prefHeight="36.0" prefWidth="58.0" text="below $10" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="537.0" AnchorPane.topAnchor="104.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button fx:id="belowFifteen" layoutX="5.0" layoutY="157.0" mnemonicParsing="false" onAction="#detectFifteen" prefHeight="36.0" prefWidth="58.0" text="below $15" AnchorPane.bottomAnchor="207.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="537.0" AnchorPane.topAnchor="157.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="11.0" layoutX="-3.0" layoutY="203.0" stroke="BLACK" strokeType="INSIDE" width="79.0" AnchorPane.bottomAnchor="186.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="524.0" AnchorPane.topAnchor="203.0" />
+      <Button fx:id="Europe" layoutX="5.0" layoutY="228.0" mnemonicParsing="false" onAction="#filterEurope" prefHeight="23.0" prefWidth="58.0" text="Europe" AnchorPane.bottomAnchor="149.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="537.0" AnchorPane.topAnchor="228.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button fx:id="World" layoutX="5.0" layoutY="260.0" mnemonicParsing="false" onAction="#filterWorld" prefHeight="23.0" prefWidth="58.0" text="world" AnchorPane.bottomAnchor="117.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="537.0" AnchorPane.topAnchor="260.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button fx:id="Asia" layoutX="5.0" layoutY="292.0" mnemonicParsing="false" onAction="#filterAsia" prefHeight="23.0" prefWidth="58.0" text="Asia" AnchorPane.bottomAnchor="85.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="537.0" AnchorPane.topAnchor="292.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button fx:id="America" layoutX="5.0" layoutY="324.0" mnemonicParsing="false" onAction="#filterAmerica" prefHeight="23.0" prefWidth="58.0" text="America" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="537.0" AnchorPane.topAnchor="324.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button fx:id="War" layoutX="5.0" layoutY="355.0" mnemonicParsing="false" onAction="#filterWar" prefHeight="23.0" prefWidth="58.0" text="War" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="537.0" AnchorPane.topAnchor="355.0">
+         <font>
+            <Font size="9.0" />
+         </font>ne.topAnchor="355.0"
+      </Button>
+      <Button fx:id="home2" layoutX="5.0" layoutY="380.0" mnemonicParsing="false" onAction="#toHome" prefHeight="15.0" prefWidth="58.0" text="home" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="36.0" layoutX="-4.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="79.0" AnchorPane.bottomAnchor="373.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="524.0" AnchorPane.topAnchor="-9.0" />
+      <Text layoutX="-47.0" layoutY="-20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fill="#f8ff00" layoutX="5.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fill="#eaff00" layoutX="6.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filters" AnchorPane.bottomAnchor="377.81787109375" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="532.11767578125" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font name="Castellar" size="15.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="filterList" layoutX="162.0" layoutY="103.0" prefHeight="222.0" prefWidth="137.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="162.0" AnchorPane.rightAnchor="301.0" AnchorPane.topAnchor="103.0" />
+      <TextArea fx:id="filterList2" layoutX="298.0" layoutY="103.0" prefHeight="222.0" prefWidth="137.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="298.0" AnchorPane.rightAnchor="165.0" AnchorPane.topAnchor="103.0" />
+   </children>
+</AnchorPane>

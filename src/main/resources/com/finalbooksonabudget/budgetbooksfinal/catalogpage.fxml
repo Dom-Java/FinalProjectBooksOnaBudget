@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.finalbooksonabudget.budgetbooksfinal.projectController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@greenbook.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="410.0" layoutX="-2.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" width="608.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="-5.0" />
+      <ImageView fitHeight="410.0" fitWidth="110.0" layoutX="494.0" AnchorPane.bottomAnchor="-10.0" AnchorPane.leftAnchor="494.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@brownpanel.jfif" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="416.0" layoutX="490.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="10.0" AnchorPane.bottomAnchor="-10.0" AnchorPane.leftAnchor="490.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="-6.0" />
+      <Button fx:id="thriftbooks" layoutX="505.0" layoutY="46.0" mnemonicParsing="false" onAction="#showThrift" prefHeight="61.0" prefWidth="84.0" text="Thrift Books" AnchorPane.bottomAnchor="293.0" AnchorPane.leftAnchor="505.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="46.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button fx:id="ebaybooks" layoutX="505.0" layoutY="151.0" mnemonicParsing="false" onAction="#showEbay" prefHeight="61.0" prefWidth="84.0" text="Ebay Books" AnchorPane.bottomAnchor="188.0" AnchorPane.leftAnchor="505.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="151.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="abebooks" layoutX="505.0" layoutY="255.0" mnemonicParsing="false" onAction="#showAbe" prefHeight="61.0" prefWidth="84.0" text="Abe Books" AnchorPane.bottomAnchor="84.0" AnchorPane.leftAnchor="505.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="255.0" />
+      <Button fx:id="backhome" layoutX="505.0" layoutY="340.0" mnemonicParsing="false" onAction="#toHome" prefHeight="50.0" prefWidth="84.0" text="Home" />
+      <TextArea fx:id="CatalogArea" layoutX="211.0" layoutY="17.0" prefHeight="368.0" prefWidth="264.0" />
+   </children>
+</AnchorPane>
